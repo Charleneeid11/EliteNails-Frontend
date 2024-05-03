@@ -1,14 +1,18 @@
 import React from "react";
 import Image from "next/image";
 import NavMenu from "../(home)/components/NavMenu";
+import HamburgerMenu from "./hamburgerMenu";
 
 type Props = {};
 
 export default function Header({}: Props) {
   return (
     <div className="p-4 px-8 flex items-center justify-between"> 
-      <Image src="/icons/logo.svg" alt="Logo" width={250} height={250} />
+      <Image src="/icons/logo.svg" alt="Logo" width={250} height={250} className="w-[250px] max-md:w-[200px] max-sm:w-[150px]" />
+      {/* large screens show nav menu */}
       <NavMenu />
+      {/* small screens have sidebar with hamburger menu */}
+      <HamburgerMenu/>
     </div>
   );
 }
