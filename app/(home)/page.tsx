@@ -1,12 +1,17 @@
 import Image from "next/image";
-import Hero from "./components/Hero";
-import Services from "./components/Services";
 
 export default function Home() {
   return (
     <div>
-      <Hero />
-
+      {/* Hero */}
+      <div className="h-[600px] max-lg:h-[500px] max-sm:[200px] flex justify-center px-20 max-lg:px-10 max-sm:px-6 gap-4 flex-col">
+        <h1 className="font-bold text-7xl max-xl:text-6xl max-lg:text-5xl max-md:text-4xl max-sm:text-3xl">
+          Max Your Beauty <br /> With Our Best <br /> Service
+        </h1>
+        <p className="text-base max-md:text-sm max-sm:text-xs">
+          We provide beauty and treatment services <br className="lg:hidden"/> with the best quality
+        </p>
+      </div>
       {/* <div
         style={{
           display: "flex",
