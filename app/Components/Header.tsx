@@ -3,8 +3,16 @@ import React, { useState } from "react";
 import Image from "next/image";
 import NavMenu from "../(home)/components/NavMenu";
 import HamburgerMenu from "./hamburgerMenu";
+import Link from "next/link";
 
 type Props = {};
+
+const links = [
+  { name: "Home", href: "/", icon: "/icons/home.png" },
+  { name: "About Us", href: "/about-us", icon: "/icons/group.png" },
+  { name: "For Him", href: "/for-him", icon: "/icons/male-gender.png" },
+  { name: "For Her", href: "/for-her", icon: "/icons/femenine.png" },
+];
 
 export default function Header({}: Props) {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,7 +33,7 @@ export default function Header({}: Props) {
       <div
         className={`${
           isOpen ? "" : "-translate-x-[100vw]"
-        } transition-all w-[45%] ease-in-out duration-500 h-[100vh] bg-[#ECD8BD] absolute left-0 top-0 z-20 md:hidden`}
+        } transition-all w-[45%] ease-in-out duration-500 h-[100vh] bg-[#ECD8BD] absolute left-0 top-0 z-20 md:hidden text-black`}
       >
         <div className="flex justify-between items-center py-4 px-4">
           <Image
@@ -43,15 +51,30 @@ export default function Header({}: Props) {
             onClick={() => setIsOpen(false)}
           />
         </div>
+        {links.map((link, index) => (
+          <Link
+            href={link.href}
+            onClick={() => setIsOpen(false)}
+            key={index}
+            className="ml-2 text-lg flex items-center justify-start gap-4 p-4"
+          >
+            <Image
+              src={link.icon}
+              alt={link.name}
+              width={25}
+              height={25}
+              className="w-[25px] h-[25px]"
+            />
+            <p>{link.name}</p>
+          </Link>
+        ))}
       </div>
       <div
         onClick={() => setIsOpen(false)}
         className={`z-10 absolute left-0 top-0 ${
           isOpen ? "w-[100%]" : "w-0"
         } transition-all ease-in-out duration-200 h-[100vh] bg-black opacity-50 md:hidden`}
-      >
-        
-      </div>
+      ></div>
     </div>
   );
 }
