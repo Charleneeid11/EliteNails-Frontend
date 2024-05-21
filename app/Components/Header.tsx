@@ -18,7 +18,7 @@ export default function Header({}: Props) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="p-4 px-8 flex items-center justify-between">
+    <div className="p-4 px-8 max-sm:px-2 flex items-center justify-between">
       <Image
         src="/icons/logo.svg"
         alt="Logo"
