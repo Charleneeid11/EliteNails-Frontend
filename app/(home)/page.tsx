@@ -178,8 +178,8 @@ export default function Home() {
         </div>
       </div>
       {/* Contact Info */}
-      <div className="py-28 px-56 max-sm:px-4 max-2xl:px-20 max-2xl:gap-10 bg-[#ECD8BD] text-[#212121] flex gap-72 justify-center max-lg:flex-col items-center">
-        <div className="w-full">
+      <div className="py-28 px-56 max-sm:px-4 max-2xl:px-4 max-2xl:gap-10 bg-[#ECD8BD] text-[#212121] flex gap-10 justify-center max-lg:flex-col items-center">
+        <div className="max-lg:w-full">
           <iframe
             className="rounded-3xl max-lg:w-full"
             src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1769.0294917750055!2d35.66285326969643!3d34.25136307763617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sElite%20Nails%20Studio%20Batroun!5e0!3m2!1sen!2slb!4v1717435240561!5m2!1sen!2slb"
@@ -188,8 +188,8 @@ export default function Home() {
           ></iframe>
         </div>
         <div className="flex flex-col gap-5">
-          <div className="flex flex-col max-lg:flex-row gap-24">
-            <div>
+          <div className="flex flex-row gap-24">
+            <div className="w-full">
               <h1 className="text-3xl max-sm:text-xl font-semibold mb-2">Contact Us</h1>
               <p className="opacity-50 text-base max-sm:text-xs">
                 Lorem ipsum dolor sit amet.
@@ -202,7 +202,7 @@ export default function Home() {
                 Lorem ipsum dolor sit amet.
               </p>
             </div>
-            <div>
+            <div className="w-full">
               <h1 className="text-3xl font-semibold mb-2 max-sm:text-xl">Visit Us</h1>
               <p className="opacity-50 text-base max-sm:text-xs">
                 Lorem ipsum dolor sit amet.
