@@ -1,9 +1,9 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import NavMenu from "../(home)/components/NavMenu";
 import HamburgerMenu from "./hamburgerMenu";
 import Link from "next/link";
+import NavMenu from "../(home)/components/NavMenu";
 
 type Props = {};
 
