@@ -7,6 +7,33 @@ const statsList = [
 ];
 
 export default function Home() {
+  const services = [
+    {
+      title: "Laser Facial Rejuvenation",
+      price: "5",
+      image: "/servicesHome/1.png",
+    },
+    {
+      title: "Anti-Aging Facial",
+      price: "3",
+      image: "/servicesHome/2.png",
+    },
+    {
+      title: "Deep Tissue Massage",
+      price: "4",
+      image: "/servicesHome/3.png",
+    },
+    {
+      title: "Lymphatic Drainage Massage",
+      price: "5",
+      image: "/servicesHome/4.png",
+    },
+    {
+      title: "Hot Stone Massage",
+      price: "4",
+      image: "/servicesHome/5.png",
+    },
+  ];
   return (
     <div>
       {/* Hero */}
@@ -85,6 +112,78 @@ export default function Home() {
             />
           </div>
         </div>
+      </div>
+
+      {/* Services */}
+      <div className="bg-[#ECD8BD] text-[#212121] py-32 px-44 flex flex-col items-center max-sm:px-4">
+        <h1 className="font-bold text-6xl mb-2">Our Services</h1>
+        <p className="text-[#7D5620] text-base">
+          Treat yourself to our services for all ages and genders
+        </p>
+        <div className="flex gap-11 flex-wrap justify-center max-sm:gap-0">
+          {services.map((service, index) => (
+            <div key={index} className="flex gap-4 my-8 flex-col">
+              <div className="w-[270px] h-[380px]">
+                <Image
+                  src={service.image}
+                  alt={service.title}
+                  width={270}
+                  height={380}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="flex flex-col w-[270px]">
+                <h2 className="font-bold text-3xl">{service.title}</h2>
+                <p className="text-[#7D5620]">From $ {service.price}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+        <button className="py-3 px-12 rounded-full border border-[#212121]">
+          View All Services
+        </button>
+      </div>
+
+      {/* About Us */}
+      <div className="flex space-between py-40 max-lg:flex-col max-lg:items-center">
+        <div className="w-[460px] h-[650px]">
+          <Image
+            src="/aboutUs/1.png"
+            alt="About us"
+            width={460}
+            height={650}
+            className="w-full h-full object-cover"
+          />
+        </div>
+        <div className="pt-60 pb-32 px-36 max-2xl:px-28 max-xl:px-20 max-lg:px-12 text-center">
+          <h1 className="font-bold text-5xl mb-16">About Us</h1>
+          <p className="text-base">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+            dolorum corrupti fuga, dicta minima quia alias rerum veniam at rem
+            labore minus perspiciatis obcaecati, doloribus nostrum esse,
+            distinctio quo quos. Illo, assumenda aliquam dolore quia, vel atque
+            perferendis et voluptatum ex in hic! Beatae ea quae nulla ipsum unde
+            voluptatem?
+          </p>
+        </div>
+        <div className="h-[650px] w-[460px]">
+          <Image
+            src="/aboutUs/2.png"
+            alt="About us"
+            width={650}
+            height={460}
+            className="w-full h-full object-cover"
+          />
+        </div>
+      </div>
+      {/* Contact Info */}
+      <div className="py-28 px-56">
+          <div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1769.0294917750055!2d35.66285326969643!3d34.25136307763617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sElite%20Nails%20Studio%20Batroun!5e0!3m2!1sen!2slb!4v1717435240561!5m2!1sen!2slb" width="600" height="450"></iframe>
+          </div>
+          <div>
+            
+          </div>
       </div>
     </div>
   );
