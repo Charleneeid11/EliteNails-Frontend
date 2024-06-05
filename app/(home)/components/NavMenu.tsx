@@ -4,7 +4,6 @@ import Link from "next/link";
 
 const menuItems = [
   { name: "Home", path: "/" },
-  { name: "About Us", path: "/about-us" },
   { name: "For Him", path: "/for-him" },
   { name: "For Her", path: "/for-her" },
 ];

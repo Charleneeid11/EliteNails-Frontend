@@ -99,9 +99,12 @@ export default function Home() {
               aestheticians and therapists are here to ensure every visit leaves
               you feeling beautiful and refreshed.
             </p>
-            <button className="py-2 px-4 text-[#212121] bg-[#ECD8BD] w-[240px] max-md:w-[150px] max-2xl:w-[240px] rounded-full text-base text-bold">
+            <Link href='/for-her' >
+              <button className="py-2 px-4 text-[#212121] bg-[#ECD8BD] w-[240px] max-md:w-[150px] max-2xl:w-[240px] rounded-full text-base text-bold">
               View Services
-            </button>
+
+              </button>
+            </Link>
           </div>
           <div>
             <Image
@@ -140,13 +143,13 @@ export default function Home() {
             </div>
           ))}
         </div>
-        <button className="py-3 px-12 rounded-full border border-[#212121]">
+        <Link href='for-her' className="py-3 px-12 rounded-full border border-[#212121]">
           View All Services
-        </button>
+        </Link>
       </div>
 
       {/* About Us */}
-      <div className="flex space-between py-40 max-lg:flex-col max-lg:items-center">
+      <div id="about-us" className="flex space-between py-40 max-lg:flex-col max-lg:items-center">
         <div className="w-[460px] h-[650px] max-sm:w-full">
           <Image
             src="/aboutUs/1.png"
