@@ -3,7 +3,7 @@ import React from "react";
 
 type Props = {};
 
-const data = {
+const data: any = {
   Facial: [
     {
       name: "Facial Cleanser",
@@ -119,7 +119,7 @@ const page = (props: Props) => {
             <div className="w-[50%] h-[2px] bg-[#ECD8BD]"></div>
           </div>
           <div className="grid grid-cols-1 justify-items-center sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
-            {data[key].map((item) => (
+            {data[key].map((item: any) => (
               <div key={item.name} className=" p-4">
                 <Image
                   src={item.imageUrl}
