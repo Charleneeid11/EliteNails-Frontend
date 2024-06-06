@@ -50,7 +50,7 @@ export default function Home() {
 
       {/* Stats */}
       <div className="lg:h-[150px] bg-[#ECD8BD] flex w-full justify-between relative text-black">
-        <div className="flex h-full justify-center items-center gap-16 w-full  max-lg:justify-between lg:w-1/2 max-lg:px-36 max-lg:py-12 max-sm:py-6 max-md:px-20 max-sm:px-6">
+        <div className="flex h-full gap-16 max-sm:gap-0 justify-center items-center w-full  max-lg:justify-between lg:w-1/2 max-lg:px-36 max-lg:py-12 max-sm:py-6 max-md:px-20 max-sm:px-6">
           {statsList.map((stat, index) => (
             <div
               key={index}
@@ -59,11 +59,11 @@ export default function Home() {
               <Image
                 src={stat.image}
                 alt={stat.title}
-                width={50}
-                height={50}
-                className="w-[50px] max-lg:w-[40px]"
+                width={25}
+                height={25}
+                className="w-[50px] max-lg:w-[25px]"
               />
-              <p className="max-lg:text-sm">{stat.title}</p>
+              <p className="max-lg:text-xs text-sm">{stat.title}</p>
             </div>
           ))}
         </div>
@@ -72,7 +72,7 @@ export default function Home() {
           alt="Star"
           width={900}
           height={1000}
-          className="absolute 2xl:-bottom-[48px] right-0 w-[900px] max-2xl:w-[800px] max-2xl:-bottom-[41px] max-xl:w-[700px] max-xl:-bottom-[34px] max-lg:w-[600px] max-lg:bottom-[134px] max-md:w-[500px] max-md:bottom-[140px] max-sm:w-[400px] max-sm:bottom-[118px]"
+          className="absolute 2xl:-bottom-[48px] right-0 w-[900px] max-2xl:w-[800px] max-2xl:-bottom-[41px] max-xl:w-[700px] max-xl:-bottom-[34px] max-lg:w-[600px] max-lg:bottom-[115px] max-md:w-[500px] max-md:bottom-[120.5px] max-sm:w-[400px] max-sm:bottom-[77px]"
         />
       </div>
 
