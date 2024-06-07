@@ -77,22 +77,22 @@ export default function Home() {
       </div>
 
       {/* Services Summary */}
-      <div className="flex max-lg:flex-col py-28 px-44 max-2xl:px-20 max-lg:py-8 max-lg:px-4 gap-28">
-        <div className=" h-full flex items-start shrink-0">
+      <div className="flex max-lg:flex-col gap-28"> 
+        <div className="h-full flex items-start shrink-0"> {/* py-28 px-44 max-2xl:px-20 max-lg:py-8 max-lg:w-full*/}
           <Image
             src="/BeautyService.png"
             alt="Beauty service"
             width={580}
             height={784}
-            className="w-[500px] max-xl:w-[400px] max-xl:h-[700px] object-cover max-lg:w-full max-lg:h-[500px]"
+            className="w-[500px] max-xl:w-[400px] max-xl:h-[700px] object-cover max-lg:w-full max-lg:h-[500px] max-lg:pt-0"
           />
         </div>
         <div className="">
-          <div className="flex flex-col gap-y-10 mb-28">
+          <div className="flex flex-col gap-y-10 mb-28 max-lg:text-center lg:mt-8">
             <h1 className="text-bold text-7xl max-2xl:text-5xl max-md:text-2xl">
               Professional Beauty Services and Massage
             </h1>
-            <p>
+            <p className="max-lg:px-10">
               We offer a comprehensive range of services, from advanced skincare
               treatments to therapeutic massages, all designed to rejuvenate
               your body and enhance your beauty. Our expert team of
