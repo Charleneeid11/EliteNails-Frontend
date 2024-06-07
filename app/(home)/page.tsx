@@ -119,7 +119,7 @@ export default function Home() {
       </div>
 
       {/* Services */}
-      <div className="bg-[#ECD8BD] text-[#212121] py-32 px-44 flex flex-col items-center max-sm:px-4">
+      <div className="bg-[#ECD8BD] text-[#212121] py-32 px-44 flex flex-col items-center max-sm:px-4 sm:px-4">
         <h1 className="font-bold text-6xl mb-2">Our Services</h1>
         <p className="text-[#7D5620] text-base">
           Treat yourself to our services for all ages and genders
